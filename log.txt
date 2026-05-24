@@ -5,3 +5,20 @@ sq/fetch_exec.go
 stacktrace/stacktrace.go
 namecheap/
 godaddy/
+
+thing, err := notebrew.NewThing()
+if err != nil {
+    return err
+}
+err = notes.Register(thing)
+if err != nil {
+    return err
+}
+err = photos.Register(thing)
+if err != nil {
+    return err
+}
+server, err := thing.NewServer()
+if err != nil {
+    return err
+}
