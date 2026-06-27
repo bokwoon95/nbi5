@@ -27,10 +27,19 @@ if err != nil {
 }
 
 nbrew.GetUser(r) (User, error)
+- DB + Dialect
 nbrew.ExecuteTemplate(w, r, tmpl, data any)
+- Logger
+- ErrorHandler()
 nbrew.Error(w, r, statusCode int, err error)
+- Logger
+- ContentSecurityPolicy
+- Referer
+- SendMail()
 nbrew.GetFlashSession(?)
+- DB + Dialect
 nbrew.SetFlashSession(?)
+- DB + Dialect
 
 nbrew.Error(w, r, http.StatusInternalServerError, err)
 nbrew.Error(w, r, http.StatusBadRequest, err)
