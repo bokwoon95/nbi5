@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bokwoon95/nbi4/namecheap/internal/namecheap"
+	"github.com/bokwoon95/nbi5/namecheap/internal/namecheap"
 	"github.com/google/go-cmp/cmp"
 )
 

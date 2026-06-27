@@ -12,7 +12,7 @@ import (
 
 	"github.com/libdns/libdns"
 
-	"github.com/bokwoon95/nbi4/namecheap/internal/namecheap"
+	"github.com/bokwoon95/nbi5/namecheap/internal/namecheap"
 )
 
 func parseIntoHostRecord(record libdns.RR) namecheap.HostRecord {

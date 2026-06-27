@@ -10,6 +10,9 @@ thing, err := notebrew.NewThing()
 if err != nil {
     return err
 }
+err = tabs.Register(nbrew)
+if err != nil {
+}
 err = notes.Register(thing)
 if err != nil {
     return err
@@ -22,3 +25,12 @@ server, err := thing.NewServer()
 if err != nil {
     return err
 }
+
+nbrew.GetUser(r) (User, error)
+nbrew.ExecuteTemplate(w, r, tmpl, data any)
+nbrew.Error(w, r, statusCode int, err error)
+nbrew.GetFlashSession(?)
+nbrew.SetFlashSession(?)
+
+nbrew.Error(w, r, http.StatusInternalServerError, err)
+nbrew.Error(w, r, http.StatusBadRequest, err)
